@@ -5,69 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schlüssel gefunden - Zakaria Bisbiss</title>
     <style>
+        /* Allgemeines Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f9;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1, #fbc2eb); /* Bunter Farbverlauf */
+            background-size: 300% 300%; /* Animationseffekt */
+            animation: gradientAnimation 8s ease infinite; /* Sanfte Bewegung des Verlaufs */
+            color: #ffffff; /* Textfarbe passend zum dunklen Hintergrund */
         }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
         .container {
             text-align: center;
-            background: #ffffff;
-            padding: 20px 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.95); /* Halbtransparenter weißer Hintergrund */
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             max-width: 400px;
             width: 90%;
         }
+
         h1 {
             color: #333333;
-            font-size: 24px;
-            margin-bottom: 10px;
+            font-size: 28px;
+            margin-bottom: 15px;
         }
+
         p {
             color: #555555;
             font-size: 16px;
+            line-height: 1.5em;
             margin-bottom: 20px;
         }
+
         .button {
-            display: block;
+            display: inline-block;
             text-decoration: none;
             color: white;
-            background-color: #007bff;
+            background-color: #007bff; /* Standardfarbe für Buttons */
             padding: 12px 20px;
-            border-radius: 5px;
+            border-radius: 50px; /* Runde Buttons */
             margin-bottom: 15px;
             font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
         }
+
         .button:hover {
-            background-color: #0056b3;
+            background-color: #0056b3; /* Dunkleres Blau beim Hover */
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(0, 91, 187, 0.5);
         }
+
         .button-secondary {
-            background-color: #28a745;
+            background-color: #28a745; /* Grün für E-Mail */
         }
+
         .button-secondary:hover {
-            background-color: #1e7e34;
+            background-color: #1e7e34; /* Dunkleres Grün beim Hover */
+        }
+
+        .button-instagram {
+            background-color: #e4405f; /* Instagram-Farbe */
+        }
+
+        .button-instagram:hover {
+            background-color: #c13584; /* Dunklere Instagram-Farbe beim Hover */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Schlüssel gefunden?</h1>
-        <p>Hallo! Mein Name ist <strong>Zakaria Bisbiss</strong>. Vielen Dank, dass Sie mich kontaktieren möchten.</p>
+        <p>Hallo! Mein Name ist <strong>Zakaria Bisbiss</strong>. Vielen Dank, dass Sie sich die Zeit nehmen, mich zu kontaktieren.</p>
         
+        <p>Bitte nutzen Sie eine der folgenden Optionen, um mich zu erreichen:</p>
+
         <!-- Telefonnummer -->
-        <a href="tel:+4915756698282" class="button">📞 Rufen Sie mich an</a>
+        <a href="tel:+4915756698282" class="button">
+          📞 Rufen Sie mich an
+        </a>
 
         <!-- E-Mail -->
-        <a href="mailto:bisbiss-92@hotmail.de" class="button button-secondary">✉️ Schick Inhaber eine Mail</a>
+        <a href="mailto:bissbiss-92@hotmail.de" class="button button-secondary">
+          ✉️ Schicken Sie mir eine Nachricht
+        </a>
 
         <!-- Instagram -->
-        <a href="https://www.instagram.com/zakariae___" target="_blank" class="button">📸 Besuchen Sie mein Instagram</a>
+        <a href="https://www.instagram.com/zakariae___/" target="_blank" class="button button-instagram">
+          📸 Besuchen Sie mein Instagram
+        </a>
     </div>
 </body>
 </html>
